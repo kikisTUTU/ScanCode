@@ -12,6 +12,9 @@
 		05A4C7E4206CBFCF00E467AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A4C7E2206CBFCF00E467AA /* Main.storyboard */; };
 		05A4C7E6206CBFCF00E467AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A4C7E5206CBFCF00E467AA /* Assets.xcassets */; };
 		05A4C7E9206CBFCF00E467AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A4C7E7206CBFCF00E467AA /* LaunchScreen.storyboard */; };
+		05A4C7F2206CC06600E467AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A4C7F1206CC06600E467AA /* AVFoundation.framework */; };
+		05A4C7F4206CD0AC00E467AA /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C7F3206CD0AB00E467AA /* ScanVC.swift */; };
+		05A4C7F6206CE55900E467AA /* LineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C7F5206CE55900E467AA /* LineAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		05A4C7E5206CBFCF00E467AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A4C7E8206CBFCF00E467AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A4C7EA206CBFCF00E467AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05A4C7F1206CC06600E467AA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		05A4C7F3206CD0AB00E467AA /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
+		05A4C7F5206CE55900E467AA /* LineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A4C7F2206CC06600E467AA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				05A4C7DD206CBFCE00E467AA /* ScanCode */,
 				05A4C7DC206CBFCE00E467AA /* Products */,
+				05A4C7F0206CC06600E467AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,24 @@
 		05A4C7DD206CBFCE00E467AA /* ScanCode */ = {
 			isa = PBXGroup;
 			children = (
+				05A4C7F5206CE55900E467AA /* LineAnimation.swift */,
 				05A4C7DE206CBFCE00E467AA /* AppDelegate.swift */,
 				05A4C7E0206CBFCF00E467AA /* ViewController.swift */,
+				05A4C7F3206CD0AB00E467AA /* ScanVC.swift */,
 				05A4C7E2206CBFCF00E467AA /* Main.storyboard */,
 				05A4C7E5206CBFCF00E467AA /* Assets.xcassets */,
 				05A4C7E7206CBFCF00E467AA /* LaunchScreen.storyboard */,
 				05A4C7EA206CBFCF00E467AA /* Info.plist */,
 			);
 			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		05A4C7F0206CC06600E467AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05A4C7F1206CC06600E467AA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A4C7F6206CE55900E467AA /* LineAnimation.swift in Sources */,
 				05A4C7E1206CBFCF00E467AA /* ViewController.swift in Sources */,
 				05A4C7DF206CBFCE00E467AA /* AppDelegate.swift in Sources */,
+				05A4C7F4206CD0AC00E467AA /* ScanVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +300,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qiaohu.ScanCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -295,7 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qiaohu.ScanCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

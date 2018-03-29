@@ -24,6 +24,12 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>请点击“允许”以允许访问</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>请点击“允许”以允许访问</string>
+	<key>NSCameraUsageDescription</key>
+	<string>请点击“允许”以允许访问</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

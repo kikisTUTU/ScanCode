@@ -7,12 +7,22 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+import AVFoundation
+import Foundation
+class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,AVCaptureMetadataOutputObjectsDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let button = UIButton()
+        button.backgroundColor = .red
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        button.setTitle("123", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
+    }
+    @objc func buttonAction() {
+        let scanvc = ScanVC()
+        self.present(scanvc, animated: false, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +32,35 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
